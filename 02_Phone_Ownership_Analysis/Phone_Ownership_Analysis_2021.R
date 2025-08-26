@@ -13,6 +13,9 @@ library(knitr)
 dataset <- read.delim("Telephones_per_100_people.csv",
                       header = TRUE, sep = ",")
 
+# Fix column names for easier reference
+names(dataset)[names(dataset) == "Land"] <- "Entity"
+
 # Initial data exploration
 cat("=== INITIAL DATA OVERVIEW ===\n")
 cat("Dataset dimensions:", dim(dataset), "\n")
@@ -91,13 +94,23 @@ print(year_counts)
 latest_year <- max(dataset$Year, na.rm=T)
 latest_data <- dataset %>% 
   filter(Year == latest_year) %>% 
+  filter(!is.na(Telephones.per.100.people)) %>%  # Remove NA values
   arrange(desc(Telephones.per.100.people))
 
 cat(paste("\n=== TOP/BOTTOM COUNTRIES (", latest_year, ") ===\n"))
 cat("Top 5 countries:\n")
-print(head(latest_data[c("Entity", "Telephones.per.100.people")], 5))
-cat("\nBottom 5 countries:\n")
-print(tail(latest_data[c("Entity", "Telephones.per.100.people")], 5))
+
+# Ensure we have data and columns exist
+if(nrow(latest_data) > 0 && "Entity" %in% names(latest_data) && "Telephones.per.100.people" %in% names(latest_data)) {
+  top_5 <- head(latest_data[c("Entity", "Telephones.per.100.people")], 5)
+  print(top_5)
+  
+  cat("\nBottom 5 countries:\n")
+  bottom_5 <- tail(latest_data[c("Entity", "Telephones.per.100.people")], 5)
+  print(bottom_5)
+} else {
+  cat("No data available for", latest_year, "\n")
+}
 
 # =============================================================================
 # DATA VISUALIZATION
@@ -193,9 +206,9 @@ if(sum(!is.na(dataset$Telephones.per.100.people)) > 1) {
 # SUMMARY REPORT
 # =============================================================================
 
-cat("\n" ,"="*60, "\n")
+cat("\n", paste(rep("=", 60), collapse=""), "\n")
 cat("FINAL SUMMARY REPORT\n")
-cat("="*60, "\n")
+cat(paste(rep("=", 60), collapse=""), "\n")
 
 cat("Dataset Information:\n")
 cat("- Total observations:", nrow(dataset), "\n")
@@ -216,4 +229,4 @@ cat("\nTrend Analysis:\n")
 cat("- Correlation with year:", round(correlation_coefficient, 4), "\n")
 cat("- Trend direction:", ifelse(correlation_coefficient > 0, "Increasing", "Decreasing"), "\n")
 
-cat("\n" ,"="*60, "\n")
+cat("\n", paste(rep("=", 60), collapse=""), "\n")

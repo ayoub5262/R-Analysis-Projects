@@ -27,8 +27,16 @@ tally(~Risk_Assessment, data=dataset)
 dataset$Gender[dataset$Gender=="man"] <- "male"
 dataset$Gender[dataset$Gender=="woman"] <- "female"
 
+# Remove any empty strings or whitespace-only entries
+dataset$Gender[dataset$Gender == "" | is.na(dataset$Gender)] <- NA
+
 # Clean Risk_Assessment column (remove invalid entries)
 dataset$Risk_Assessment[dataset$Risk_Assessment=="Risk_Assessment"] <- NA
+
+# Remove any rows where essential variables are missing
+cat("Rows before removing missing data:", nrow(dataset), "\n")
+dataset <- dataset[!is.na(dataset$Gender) & !is.na(dataset$Age), ]
+cat("Rows after removing missing Gender/Age:", nrow(dataset), "\n")
 
 # Check distributions after cleaning
 cat("\n=== AFTER CLEANING ===\n")
@@ -119,10 +127,32 @@ par(mfrow=c(1,1))
 
 cat("\n=== STATISTICAL TESTS ===\n")
 
-# 1. Test if age differs by gender
+# 1. Test if age differs by gender (t-test)
 cat("\n1. Age difference by Gender (t-test):\n")
-t_test_result <- t.test(Age ~ Gender, data=dataset)
-print(t_test_result)
+
+# Check Gender levels before t-test
+cat("Gender distribution before t-test:\n")
+print(table(dataset$Gender, useNA = "always"))
+
+# For t-test, we need exactly 2 groups. Let's filter to just male/female for comparison
+binary_gender_data <- dataset[dataset$Gender %in% c("male", "female"), ]
+
+cat("Sample sizes for t-test: male =", sum(binary_gender_data$Gender == "male"), 
+    ", female =", sum(binary_gender_data$Gender == "female"), "\n")
+
+if(nrow(binary_gender_data) > 0 && length(unique(binary_gender_data$Gender)) == 2) {
+  t_test_result <- t.test(Age ~ Gender, data=binary_gender_data)
+  print(t_test_result)
+  
+  # Also test all three groups with ANOVA
+  cat("\n1b. Age difference by Gender - All groups (ANOVA):\n")
+  if(length(unique(dataset$Gender[!is.na(dataset$Gender)])) > 2) {
+    anova_gender <- aov(Age ~ Gender, data=dataset)
+    print(summary(anova_gender))
+  }
+} else {
+  cat("Error: Insufficient data for t-test analysis.\n")
+}
 
 # 2. Test if there's association between Gender and Risk Assessment
 cat("\n2. Association between Gender and Risk Assessment (Chi-square test):\n")
