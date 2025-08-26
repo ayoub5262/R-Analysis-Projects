@@ -1,0 +1,184 @@
+---
+title: "Development of Renewable Energy Share in Germany Compared to Global Trends (1990–2020)"
+author: "Ayoub Jebali"
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+---
+
+# Introduction
+This analysis examines the development of the renewable energy share in total energy consumption in Germany compared to the global average from 1990 to 2020. The focus is on whether Germany takes a pioneering role or whether other countries/regions have made similar or even faster progress.
+
+# Datasets
+The datasets come from the World Bank Group:
+"Renewable energy consumption (% of total final energy consumption)"
+
+This dataset provides comprehensive data on renewable energy consumption as a percentage of total final energy consumption across different countries and regions from 1990 to 2020.
+
+\newpage
+
+# Code Section
+## Reading Data
+
+```{r setup, echo=TRUE, message=FALSE, warning=FALSE}
+# Load libraries
+library(dplyr)
+library(ggplot2)
+library(readr)
+library(reshape2)
+library(mosaic)
+
+# Read data
+energy_data <- read_csv("Renewable_energy_consumption_worldwide.csv",
+                        col_types = cols(`Indicator Name` = col_skip(),
+                                         `Indicator Code` = col_skip(),
+                                         `Country Code` = col_skip(),
+                                         ...69 = col_skip()))
+
+# Overview of the data
+head(energy_data)
+# Using inspect(energy_data) or other functions would be too long
+```
+\newpage
+
+## Data Cleaning
+
+```{r}
+
+# Check for missing data
+sum(is.na(energy_data))
+
+# Identify numeric columns corresponding to years 1960-1989
+columns_to_remove <- which(colnames(energy_data) %in% as.character(1960:1989))
+# Remove these columns
+energy_data <- energy_data[, -columns_to_remove]
+
+# Identify columns corresponding to years 2021 and later
+columns_to_remove <- which(colnames(energy_data) %in% as.character(2021:2100))
+# Remove these columns
+energy_data <- energy_data[, -columns_to_remove]
+
+# Check for missing data
+sum(is.na(energy_data))
+
+# Overview of the data
+head(energy_data)
+```
+\newpage
+```{r}
+# Transform data to long format
+energy_data_long <- melt(energy_data,
+                         id.vars = c("Country Name"),
+                         variable.name = "Year",
+                         value.name = "Renewable_Energy_Share")
+
+# Convert year to numeric value
+energy_data_long$Year <- as.numeric(as.character(energy_data_long$Year))
+
+# Renewable energy share in Germany
+germany_data <- energy_data_long %>%
+  filter(`Country Name` == "Germany")
+
+# Overview of data for Germany
+head(germany_data)
+favstats(~Renewable_Energy_Share, data=germany_data)
+
+# Filter global average
+worldwide_avg <- energy_data_long %>%
+  filter(`Country Name` == "World")
+
+# Overview of global average values
+head(worldwide_avg)
+favstats(~Renewable_Energy_Share, data=worldwide_avg)
+```
+\newpage
+
+## Data Visualization
+
+```{r, fig.width=10, fig.height=6}
+# Create main comparison plot
+ggplot() +
+  geom_line(data = germany_data, 
+            aes(x = Year, y = Renewable_Energy_Share, color = "Germany"), 
+            size = 1.2) +
+  geom_line(data = worldwide_avg, 
+            aes(x = Year, y = Renewable_Energy_Share, color = "Global"), 
+            size = 1.2) +
+  geom_point(data = germany_data, 
+             aes(x = Year, y = Renewable_Energy_Share, color = "Germany"), 
+             size = 0.8, alpha = 0.7) +
+  geom_point(data = worldwide_avg, 
+             aes(x = Year, y = Renewable_Energy_Share, color = "Global"), 
+             size = 0.8, alpha = 0.7) +
+  labs(title = "Development of Renewable Energy Share (1990-2020)",
+       subtitle = "Germany vs. Global Average",
+       x = "Year",
+       y = "Renewable Energy Share (%)",
+       color = "Region") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, size = 12),
+        legend.position = "bottom") +
+  scale_color_manual(values = c("Germany" = "#1f77b4", "Global" = "#ff7f0e")) +
+  scale_x_continuous(breaks = seq(1990, 2020, 5)) +
+  ylim(0, max(c(germany_data$Renewable_Energy_Share, 
+                worldwide_avg$Renewable_Energy_Share), na.rm = TRUE) * 1.1)
+```
+
+## Additional Analysis
+
+```{r}
+# Calculate growth rates
+germany_start <- germany_data$Renewable_Energy_Share[germany_data$Year == 1990]
+germany_end <- germany_data$Renewable_Energy_Share[germany_data$Year == 2020]
+germany_growth <- ((germany_end - germany_start) / germany_start) * 100
+
+global_start <- worldwide_avg$Renewable_Energy_Share[worldwide_avg$Year == 1990]
+global_end <- worldwide_avg$Renewable_Energy_Share[worldwide_avg$Year == 2020]
+global_growth <- ((global_end - global_start) / global_start) * 100
+
+# Create summary statistics table
+summary_stats <- data.frame(
+  Region = c("Germany", "Global"),
+  Start_1990 = c(germany_start, global_start),
+  End_2020 = c(germany_end, global_end),
+  Absolute_Change = c(germany_end - germany_start, global_end - global_start),
+  Percentage_Growth = c(germany_growth, global_growth)
+)
+
+print("Summary Statistics (1990-2020):")
+print(summary_stats)
+
+# Calculate correlation between Germany and global trends
+correlation <- cor(germany_data$Renewable_Energy_Share, 
+                   worldwide_avg$Renewable_Energy_Share, 
+                   use = "complete.obs")
+print(paste("Correlation between Germany and Global trends:", round(correlation, 3)))
+```
+
+# Interpretation
+
+## Key Findings
+
+The analysis reveals several important insights about renewable energy development:
+
+1. **Germany's Leadership Role**: Germany demonstrates a clear pioneering position in renewable energy adoption, with consistently higher renewable energy shares compared to the global average throughout the entire period.
+
+2. **Accelerated Growth**: Germany shows significant acceleration in renewable energy adoption, particularly from the early 2000s onwards, likely driven by policy initiatives such as the Renewable Energy Act (EEG).
+
+3. **Global Progress**: While the global average shows more modest growth, there is still a positive trend, indicating worldwide recognition of the importance of renewable energy sources.
+
+## Statistical Evidence
+
+- Germany's renewable energy share increased substantially from 1990 to 2020
+- The global average shows steady but slower growth over the same period
+- The correlation analysis indicates the relationship between German and global trends
+- Germany consistently outperforms the global average by a significant margin
+
+## Conclusion
+
+Germany has indeed taken a pioneering role in renewable energy development, significantly outpacing global trends. This leadership position is evident not only in absolute values but also in the rate of growth and sustained commitment to renewable energy expansion over three decades.
+
+The data supports the hypothesis that Germany serves as a leader rather than a follower in the global renewable energy transition, potentially serving as a model for other nations seeking to increase their renewable energy adoption.

@@ -1,0 +1,319 @@
+Gender;Age;Birth_Month;Height;Hair_Color;Commute_Distance;Commute_Method;Number_of_SWS;Time_Entertainment_Media;Posts;WhatsApp;Canteen
+f;41;12;180;brown;7;Car;18;1;0;7;(0) never
+f;19;8;164;blond;0.3;on_Foot;18;2;0;54;(2) twice a week
+f;20;10;174;blond;1;Bicycle;22;2;1;100;(1) once a week
+m;21;7;198;brown;1;Car;;1.5;0;20;(3) three times a week
+f;19;12;171;brown;1.6;Public_Transport;18;4;0;4;(1) once a week
+f;19;12;170;blond;2;;20;2;1;50;(1) once a week
+f;19;9;173;brown;2.1;Public_Transport;22;4;0;10;(0) never
+m;21;10;186;brown;2.5;Bicycle;;4;0;4;(2) twice a week
+f;20;1;160;brown;2.7;Public_Transport;22;2.5;3;3;(1) once a week
+f;20;12;170;blond;2.8;Bicycle;24;3;0;20;(1) once a week
+f;19;12;185;brown;2.8;Car;14;4;1;13;(0) never
+f;20;7;169;blond;3;Public_Transport;12;2;0.3;30;(1) once a week
+m;25;5;179;blond;3;Bicycle;30;4;0;40;(1) once a week
+f;21;3;155;blond;3;Car;22;2;2;20;(0) never
+f;20;11;179;blond;3.5;Public_Transport;28;2.5;0.5;30;(0) never
+f;21;3;171;blond;4;Public_Transport;20;3;0;30;(0) never
+f;22;1;161;blond;4;Public_Transport;13;3;1;51;(1) once a week
+f;24;12;73;blond;4.9;Car;22;3;0.3;5;(2) twice a week
+f;23;10;174;brown;5;Public_Transport;16;3;0;37;(2) twice a week
+f;20;10;170;brown;5;Public_Transport;;1;0;;(3) three times a week
+m;26;23;190;brown;5;Bicycle;18;3;0.3;25;(5) every day
+f;22;5;177;gray;5;Public_Transport;20;5;0;30;(1) once a week
+m;21;1;173;brown;6;Public_Transport;16;3;0;too_much;(2) twice a week
+f;20;12;177;brown;13;Public_Transport;22;5;0;20;(1) once a week
+f;24;8;161;blond;14;Public_Transport;20;2;1;50;(1) once a week
+f;20;11;180;blond;15;Public_Transport;26;1;0;47;(0) never
+f;26;6;168;blond;15;Car;22;4;0;250;(0) never
+m;20;7;190;brown;15;Public_Transport;;5;0;200;(1) once a week
+m;19;7;198;brown;15;Public_Transport;12;4;0.2;65;(1) once a week
+f;24;6;169;brown;16;Public_Transport;16;5;1;20;(1) once a week
+f;23;10;167;red;17;Public_Transport;26;3;0.5;39;(2) twice a week
+f;31;5;160;blond;18;Car;26;1;0;15;(0) never
+f;20;10;160;blond;19;Car;;1.5;0;20;(2) twice a week
+f;24;11;170;blond;20;Public_Transport;22;2;0.5;5;(2) twice a week
+f;20;4;163;blond;20;Public_Transport;;0.5;0;40;(1) once a week
+f;21;2;162;blond;21;Public_Transport;24;3;0;6;(0) never
+m;25;3;184;blond;22;Public_Transport;18;5;1;111;(3) three times a week
+f;20;3;168;blond;22;Public_Transport;20;3;0;100;(1) once a week
+m;20;5;188;blond;22;Public_Transport;10;2;20;115;(1) once a week
+f;20;2;163;brown;22;Public_Transport;20;5;0;18;(1) once a week
+m;20;12;185;red;23;Public_Transport;18;6;2;50;(0) never
+f;21;7;170;brown;28;Public_Transport;28;1;0;15;(0) never
+f;22;3;163;blond;30;Public_Transport;28;2.5;0;75;(1) once a week
+f;20;11;173;blond;30;Public_Transport;20;2;0.5;6;(4) four times a week
+f;26;3;164;brown;30;Public_Transport;20;3;0;20;(1) once a week
+f;19;5;163;blond;34;Public_Transport;26;2;0;30;(1) once a week
+m;20;2;186;blond;35;Car;6;2;0;40;(0) never
+f;31;5;163;blond;40;Car;4;5;1;25;(0) never
+f;19;6;168;brown;40;Public_Transport;24;1;0;50;(1) once a week
+f;20;8;175;blond;43;Public_Transport;20;2;0;30;(0) never
+f;19;5;180;brown;43;Public_Transport;;3;1;50;(1) once a week
+f;23;10;168;brown;44;Car;14;10;2;20;(2) twice a week
+f;22;7;60;brown;45;Car;26;1;0;10;(5) every day
+m;22;12;183;brown;45;Public_Transport;22;3;0;100;(0) never
+f;21;9;171;blond;50;Public_Transport;16;2;1;100;(2) twice a week
+f;19;11;168;brown;50;Public_Transport;14;6;1;;(1) once a week
+m;20;12;188;brown;50;Public_Transport;11;5;0;20;(2) twice a week
+f;24;3;164;blond;55;Public_Transport;20;3;1;100;(2) twice a week
+m;20;10;186;blond;60;Public_Transport;20;2;3;80;(2) twice a week
+f;27;1;157;blond;60;Public_Transport;22;6;0;8;(2) twice a week
+f;42;7;165;blond;62;Public_Transport;18;1;0;17;(3) three times a week
+m;21;6;176;brown;75;Car;11;6;10;45;(2) twice a week
+f;18;5;163;blond;;Public_Transport;;3.5;;;(1) once a week
+f;20;1;168;brown;;Public_Transport;;3;0;50;(2) twice a week
+f;20;6;158;brown;;Car;;;;12;(2) twice a week
+f;20;2;170;red;;Car;;;;;(0) never
+m;28;11;187;blond;20;Public_Transport;24;2;0;100;(1) once a week
+f;20;11;173;blond;34;Car;26;2;0;;(0) never
+f;;7;170;brown;54;Public_Transport;24;5;0;25;(2) twice a week
+f;30;6;160;brown;0;Public_Transport;14;2;0;;(0) never
+f;25;7;170;brown;0.2;on_Foot;28;1.5;0.001;50;(4) four times a week
+f;21;10;172;blond;0.5;on_Foot;24;2;2;15;(5) every day
+f;20;9;168;brown;0.5;on_Foot;30;3;150;100;(2) twice a week
+f;21;1;165;brown;1;Bicycle;26;3;10;21;(2) twice a week
+f;20;5;175;blond;1.2;Public_Transport;26;5;0;150;(1) once a week
+f;25;10;165;brown;1.5;Car;20;2;0;30;(3) three times a week
+f;24;6;164;brown;2;on_Foot;22;2;0;25;(2) twice a week
+f;22;3;153;blond;3;Public_Transport;;1;0;50;(1) once a week
+f;23;2;179;blond;3;Public_Transport;24;3;0;3;(0) never
+f;21;8;170;blond;3;Public_Transport;22;3;0;200;(1) once a week
+m;24;9;181;blond;3;Public_Transport;20;4;0;10;(0) never
+f;24;12;175;brown;3;Public_Transport;24;5;0;500;(2) twice a week
+f;21;4;172;brown;3;Public_Transport;24;2;15;82;(2) twice a week
+f;21;8;171;brown;3;Public_Transport;28;4;0;95;(1) once a week
+f;32;9;163;brown;3;on_Foot;12;3;0;4;(1) once a week
+f;21;9;173;red;3;on_Foot;24;3;0;;(1) once a week
+f;22;9;153;black;3;Public_Transport;9;2;0;50;(2) twice a week
+f;21;4;168;blond;3.2;Public_Transport;26;3;1;150;(1) once a week
+f;26;9;172;blond;3.4;Public_Transport;20;3;0;47;(1) once a week
+f;21;3;176;blond;3.4;Bicycle;22;4;0;20;(2) twice a week
+f;26;4;164;blond;3.5;Public_Transport;;7;0;7;(0) never
+f;20;11;172;blond;3.8;Public_Transport;24;3;1;25;(1) once a week
+f;21;9;168;blond;3.8;Public_Transport;26;3;1;10;(0) never
+f;22;7;168;blond;4;Public_Transport;26;2;0;112;(1) once a week
+m;24;8;190;blond;4;Public_Transport;;6;0;18;(1) once a week
+f;21;10;172;brown;4;Bicycle;;2;0;8;(1) once a week
+f;21;11;163;brown;4;Public_Transport;22;1;0;many;(3) three times a week
+f;21;6;175;red;4;Public_Transport;13;2;0;25;(1) once a week
+f;23;10;161;red;4;on_Foot;20;2;0;100;(4) four times a week
+f;25;8;165;brown;4.1;Car;30;1;0;10;(1) once a week
+m;23;9;184;brown;4.4;Public_Transport;24;10;0;20;(2) twice a week
+m;29;1;179;blond;4.5;on_Foot;24;3;0;2;(3) three times a week
+f;21;10;172;blond;5;Public_Transport;24;3;0;40;(0) never
+f;20;2;180;blond;5;Public_Transport;18;4;0.5;50;(0) never
+f;21;6;175;blond;5;Bicycle;32;20;0;20;(2) twice a week
+f;20;2;158;brown;5;Public_Transport;20;5;0;100;(2) twice a week
+f;21;10;167;brown;5;Public_Transport;16;4;0.1;30;(0) never
+f;21;1;170;brown;5;Public_Transport;24;2;1;20;(1) once a week
+f;20;7;175;brown;5;Car;18;2;20;20;(0) never
+f;21;1;172;red;5;Public_Transport;16;5;1;30;(2) twice a week
+f;22;1;171;brown;5.1;Public_Transport;20;4;0;150;(1) once a week
+m;19;6;185;blond;6;Car;16;3;0;5;(0) never
+f;22;3;175;blond;6;Public_Transport;28;4;1;60;(2) twice a week
+m;30;6;193;blond;6;Car;16;1;0.5;5;(1) once a week
+f;23;8;164;brown;6;Bicycle;16;3;0;100;(0) never
+f;21;8;164;brown;6;Public_Transport;28;3;0;30;(2) twice a week
+f;19;12;172;brown;6;Public_Transport;16;1;0;5;(2) twice a week
+m;22;9;172;brown;6;Public_Transport;22;2;0;110;(3) three times a week
+m;20;8;188;brown;6;Bicycle;30;10;0;2;(1) once a week
+f;24;10;185;brown;6;Public_Transport;28;3;0.1;20;(0) never
+f;24;3;166;brown;6;Public_Transport;20;4;0;30;(0) never
+f;22;12;178;black;6;Public_Transport;24;1;0;4;(5) every day
+m;32;7;197;black;6;Car;22;4;0;10;(3) three times a week
+f;21;7;160;blond;7;Public_Transport;;2;0;;(0) never
+f;20;5;167;brown;7;Car;18;8;1;200;(1) once a week
+m;23;2;183;brown;7;Public_Transport;32;5;0.2;55;(3) three times a week
+m;22;7;186;red;7;Public_Transport;20;4;0;65;(4) four times a week
+m;20;10;176;blond;7.4;Public_Transport;22;2.5;2;40;(4) four times a week
+m;21;10;185;brown;7.5;Public_Transport;22;6;0;100;(2) twice a week
+f;22;9;169;brown;7.7;Car;22;3;0;many;(0) never
+f;20;6;172;brown;8;Car;18;5;0;50;(1) once a week
+f;22;10;174;brown;8;Car;24;5;0;100;(1) once a week
+f;25;9;162;red;8;Public_Transport;20;8;0;25;(0) never
+m;20;8;167;black;8;Public_Transport;20;4;0;3;(5) every day
+f;25;11;170;other;8;Public_Transport;20;3;0;40;(0) never
+f;;;;;8;Car;;;;;(0) never
+f;20;7;160;brown;9;Public_Transport;32;2;0.5;130;(1) once a week
+f;21;8;180;brown;9;Public_Transport;22;2;0;40;(0) never
+f;26;1;168;brown;9.2;on_Foot;24;3;0;100;(3) three times a week
+m;22;1;175;blond;9.9;Car;18;9;0;0;(3) three times a week
+f;20;11;168;blond;10;Public_Transport;16;2;;;(0) never
+f;19;9;176;blond;10;Public_Transport;24;8;0;46;(1) once a week
+f;26;4;167;blond;10;Car;24;1;1;5;(2) twice a week
+f;20;4;178;blond;10;Public_Transport;20;2;2;;(0) never
+f;24;2;165;blond;10;Car;24;3;0;50;(0) never
+f;21;7;166;brown;10;Public_Transport;30;4;2;50;(1) once a week
+f;19;6;160;brown;10;Car;28;6;0.5;200;(2) twice a week
+m;22;2;180;brown;10;Public_Transport;15;8;0.1;100;(1) once a week
+m;26;12;190;brown;10;Car;20;2;1;50;(1) once a week
+f;22;10;170;blond;11;Car;26;2;0;70;(0) never
+f;20;11;167;blond;12;Public_Transport;16;3;2;10;(0) never
+f;22;4;176;blond;12;Car;;;0;;(0) never
+f;22;11;164;blond;13;Car;19;5;1;30;(0) never
+f;24;9;163;blond;13;Public_Transport;30;4;0;150;(2) twice a week
+f;21;6;170;brown;13;Car;25;1;10;80;(1) once a week
+f;25;1;176;brown;13;Public_Transport;24;3;0;120;(3) three times a week
+f;19;6;172;red;13;Bicycle;22;1.5;1;6;(0) never
+f;19;5;178;blond;15;Public_Transport;12;3;1;30;(3) three times a week
+f;21;4;162;blond;15;Public_Transport;22;2;0;21;(0) never
+m;22;2;188;blond;15;Car;20;3;0;20;(2) twice a week
+f;22;2;170;blond;15;Public_Transport;20;3;0;50;(1) once a week
+f;20;6;160;blond;15;Car;22;4;1;150;(0) never
+f;21;1;168;brown;15;Car;26;6;1;30;(2) twice a week
+f;20;7;178;brown;15;Car;10;3;0;10;(1) once a week
+f;21;4;170;brown;15;Public_Transport;20;2;0.5;50;(1) once a week
+f;24;7;165;brown;15;Car;24;5;1;100;(0) never
+m;35;5;183;black;15;Public_Transport;20;1.5;20;15;(3) three times a week
+f;19;6;170;brown;16;Public_Transport;9;3;20;17;(0) never
+f;20;5;175;brown;17;Public_Transport;24;2;1;20;(0) never
+f;2f;7;170;blond;18;Car;22;2;0;114;(0) never
+f;21;1;168;brown;18;Public_Transport;18;2;0;20;(0) never
+f;23;7;166;red;18;Car;28;2;0;16;(1) once a week
+f;20;5;168;brown;19;Car;18;3;0;40;(1) once a week
+f;20;6;173;brown;19;Car;16;3;0;90;(0) never
+f;22;8;172;blond;20;Car;24;2;1;30;(1) once a week
+f;20;10;172;blond;20;Public_Transport;26;2;2;120;(2) twice a week
+f;20;4;164;blond;20;Car;20;2;1;35;(0) never
+f;24;1;180;blond;20;Car;15;2;0;;(2) twice a week
+f;28;1;170;blond;20;Car;10;2;0;8;(0) never
+f;;2;1.6;brown;20;Car;18;4;1;50;(1) once a week
+f;21;11;164;brown;20;Car;16;4;2;150;(0) never
+f;19;7;177;brown;20;Car;24;2;1;10;(3) three times a week
+f;22;7;164;brown;20;Car;22;1;0;120;(0) never
+m;31;10;180;brown;20;Public_Transport;4;1;5;10;(1) once a week
+f;23;11;170;brown;20;Public_Transport;11;2;1;;(0) never
+f;23;7;160;brown;20;Car;;3;1;10;(0) never
+m;23;8;187;brown;20;Public_Transport;18;4;0;6;(1) once a week
+m;29;4;187;brown;20;Car;22;3;0;47;(1) once a week
+f;22;9;164;red;20;Car;32;2;2;20;(2) twice a week
+f;20;5;175;red;20;Public_Transport;22;3;0;50;(2) twice a week
+f;21;3;177;red;20;Car;28;3;0.25;57;(0) never
+f;22;5;178;red;20;Car;26;2;1;40;(0) never
+f;23;2;173;blond;21;Public_Transport;;5;1;;(2) twice a week
+f;20;9;172;red;22;Public_Transport;20;1;5;150;(0) never
+f;22;1;160;blond;23;Public_Transport;26;0.4;0.1;70;(0) never
+m;27;4;195;black;23;Car;16;2;0;10;(0) never
+f;23;6;173;blond;24;Car;16;3;0;60;(0) never
+f;20;2;170;brown;24;Public_Transport;20;2;1;10;(0) never
+f;21;3;176;blond;25;Car;20;3;0;10;(3) three times a week
+f;19;5;168;blond;25;Public_Transport;24;4;0;30;(1) once a week
+f;22;9;168;blond;25;Public_Transport;18;3;0;15;(1) once a week
+f;20;1;178;blond;25;Car;18;3;0;40;(2) twice a week
+f;29;8;179;blond;25;Car;18;1;20;40;(0) never
+f;20;9;170;brown;25;Public_Transport;22;2;0;50;(1) once a week
+m;23;12;177;brown;25;Car;13;1;0;10;(0) never
+m;21;8;177;brown;25;Car;20;1;0;400;(2) twice a week
+f;21;4;176;brown;25;Car;20;8;3;40;(1) once a week
+m;24;10;183;brown;25;Public_Transport;22;3;1;10;(2) twice a week
+f;22;12;170;red;26;Public_Transport;16;3;1;150;(1) once a week
+f;26;7;163;black;26;Car;16;2;1;10;(0) never
+f;20;6;162;brown;27;Public_Transport;;2.5;1;30;(0) never
+f;23;1;169;brown;27;Car;;4;1;8;(0) never
+f;21;9;178;brown;28;Public_Transport;22;0.5;0;30;(1) once a week
+f;20;12;170;brown;29;Car;26;2.5;0;100;(0) never
+f;22;7;163;blond;30;Public_Transport;24;5;0;15;(0) never
+f;22;3;163;blond;30;Public_Transport;11;2;1;100;(0) never
+f;20;1;175;blond;30;Public_Transport;18;5;1;100;(0) never
+f;23;3;176;blond;30;Public_Transport;18;2;0.2;42;(2) twice a week
+f;20;7;158;brown;30;Car;20;4;0;5;(5) every day
+f;19;4;172;brown;31;Public_Transport;26;3;1;200;(1) once a week
+f;21;9;170;brown;31;Car;18;2;0;12;(1) once a week
+f;22;6;166;blond;32;Public_Transport;20;;0;;(0) never
+f;25;10;180;brown;32;Public_Transport;24;4;0;104;(1) once a week
+f;21;3;180;blond;33;Public_Transport;24;5;0.5;;(0) never
+f;19;5;172;brown;33;Public_Transport;;4;4;50;(0) never
+f;20;8;168;brown;34;Car;18;4;120;80;(0) never
+f;21;3;168;blond;35;Car;12;5;0.5;;(1) once a week
+f;24;8;166;blond;35;Car;20;1.5;0;20;(0) never
+f;22;9;167;brown;35;Public_Transport;20;1;0;150;(1) once a week
+f;22;10;177;brown;35;Public_Transport;4;2;0;;(0) never
+f;21;12;165;brown;35;Car;24;2;0;46;(2) twice a week
+f;20;3;177;gray;35;Car;24;6;0;76;(1) once a week
+f;21;11;163;brown;36;Car;22;4;1;50;(1) once a week
+f;21;2;174;blond;37;Public_Transport;20;4;3;;(1) once a week
+f;22;3;163;red;37;Car;20;3;1;33;(0) never
+f;20;4;163;brown;38;Public_Transport;24;2;0.001;100;(1) once a week
+f;21;9;;brown;38;Car;22;2;2;;(1) once a week
+f;25;12;162;brown;39;Public_Transport;21;3;0;15;(1) once a week
+f;21;10;159;blond;40;Car;26;2;;;(1) once a week
+f;21;1;164;blond;40;Public_Transport;30;3;5;150;(0) never
+f;21;1;175;blond;40;Car;20;4;2;50;(0) never
+f;19;12;172;blond;40;Car;20;1;0;30;(0) never
+f;21;3;185;blond;40;Car;15;8;0;25;(0) never
+f;24;3;170;blond;40;Public_Transport;24;2;0;77;(1) once a week
+m;23;4;188;blond;40;Public_Transport;22;5;0;500;(1) once a week
+f;25;8;171;blond;40;Public_Transport;24;1;0;500;(2) twice a week
+f;20;6;170;brown;40;Public_Transport;20;2;0;38;(0) never
+f;22;7;180;brown;40;Public_Transport;28;3;0.2;110;(2) twice a week
+f;20;6;159;brown;40;Car;22;3;0;8;(1) once a week
+f;20;9;165;blond;42;Public_Transport;28;3;0;50;(0) never
+f;20;8;182;blond;42;Public_Transport;24;;;39;(1) once a week
+f;20;6;165;brown;44;Car;26;3;0;150;(0) never
+f;20;2;176;red;44;Public_Transport;20;4;0;25;(1) once a week
+f;20;5;165;blond;45;Public_Transport;18;3;1;26;(0) never
+f;27;3;166;blond;45;Car;24;3;1;30;(1) once a week
+f;21;1;171;blond;45;Public_Transport;20;3;2;50;(1) once a week
+f;20;5;171;brown;45;Car;26;2;0;20;(1) once a week
+f;19;7;173;red;45;Public_Transport;;2;;;(1) once a week
+f;20;7;170;blond;46;Car;22;5;0;100;(0) never
+f;20;10;167;blond;46;Public_Transport;20;3;1;200;(1) once a week
+f;24;4;171;blond;50;Car;12;3;0;50;(4) four times a week
+f;22;10;180;blond;50;Car;20;2;1;70;(0) never
+f;20;8;165;brown;50;Car;16;2;0;3;(0) never
+m;26;6;180;brown;50;Public_Transport;20;3;1;50;(2) twice a week
+m;27;10;180;blond;52;Public_Transport;15;4;1;50;(1) once a week
+f;28;6;181;blond;53;Car;18;3;0.1;30;(0) never
+f;20;11;175;brown;56;Public_Transport;18;4;0;172;(0) never
+f;21;2;163;brown;57;Public_Transport;;2;1;17;(1) once a week
+f;22;11;167;blond;60;Public_Transport;;2;1;100;(1) once a week
+f;21;8;170;blond;60;Public_Transport;20;8;1;200;(0) never
+f;20;7;175;brown;60;Public_Transport;22;1;0;100;(1) once a week
+f;23;11;168;brown;60;Public_Transport;18;3;0;20;(1) once a week
+f;24;10;169;blond;63;Car;;;;;
+f;20;1;173;brown;63;Public_Transport;26;5;0;22;(0) never
+f;20;9;172;blond;75;Public_Transport;;3;0.2;75;(1) once a week
+f;25;4;170;brown;76;Public_Transport;18;3;0.25;20;(3) three times a week
+f;22;10;165;gray;80;Public_Transport;30;3;10;7;(0) never
+f;21;9;170;brown;89;Public_Transport;30;4;0;30;(1) once a week
+f;21;3;1.8;blond;105;Public_Transport;30;4;2;15;(2) twice a week
+m;24;8;170;brown;5;Public_Transport;;;;;
+f;19;12;168;blond;;Public_Transport;18;5;1;200;(1) once a week
+f;25;11;176;blond;;Public_Transport;20;2;0;30;(1) once a week
+m;25;1;181;brown;4.2;Public_Transport;10;6;0;52;(4) four times a week
+f;22;3;170;brown;4.3;Public_Transport;20;2;0;150;(2) twice a week
+f;26;5;170;brown;5;Public_Transport;12;4;0.5;15;(2) twice a week
+f;21;10;166;brown;5;Car;18;3;0;100;(2) twice a week
+f;26;3;184;blond;6;Public_Transport;30;10;7;800;(4) four times a week
+f;26;3;210;brown;6;Public_Transport;26;9;0;300;(0) never
+f;23;1;171;blond;10;Public_Transport;16;5;1;12;(0) never
+f;28;12;168;brown;10;Car;24;3;1;1;(1) once a week
+f;20;8;171;blond;15;Public_Transport;12;2.5;;9;(0) never
+f;21;8;165;blond;18;Public_Transport;18;3;;50;(0) never
+f;24;4;166;blond;19;Car;20;2;1;20;(0) never
+f;21;7;164;blond;24;Car;22;;;;(2) twice a week
+f;26;6;164;brown;40;Public_Transport;20;2;0;0;(1) once a week
+f;20;5;164;brown;50;Public_Transport;16;2;10;50;(3) three times a week
+f;23;3;173;blond;70;Public_Transport;16;1.5;0.07;80;(0) never
+f;28;12;170;blond;8;Car;18;2;0;7;(1) once a week
+f;32;9;158;red;8;Car;8;4;1;50;(1) once a week
+f;23;2;170;brown;45;Public_Transport;8;6;0;78;(0) never
+f;23;8;185;blond;1;on_Foot;42;1;3;2;(4) four times a week
+f;25;8;170;blond;2;Public_Transport;14;3;0.1;35;(0) never
+f;21;11;174;blond;5;Public_Transport;20;6;1;15;(0) never
+m;24;9;179;blond;10;Bicycle;10;3;0;100;(0) never
+f;30;10;172;brown;12;Car;22;3;0;20;(0) never
+f;29;9;176;blond;30;Car;10;1;0;30;(0) never
+f;27;8;165;blond;35;Car;14;2;0;30;(0) never
+f;22;11;177;blond;60;Public_Transport;8;3;0;30;(1) once a week
+f;25;10;171;gray;17;Car;16;8;1;50;(0) never
+d;22;9;150;gray;10;Public_Transport;4;20;0;0;(1) once a week
+f;23;9;169;brown;2.1;Bicycle;22;3.5;0.5;8;(2) twice a week
+m;20;5;155;brown;34;Public_Transport;12;4;;3;(1) once a week
+f;24;8;170;brown;45;Public_Transport;20;4;0.2;20;(2) twice a week
+f;26;7;166;red;31;Car;;3;0;20;(0) never
+m;24;5;183;brown;35;Public_Transport;;;;;
+f;22;8;168;blond;64;Public_Transport;30;2;2;81;(0) never
+f;21;8;;brown;;Car;24;;;;
+f;19;6;;;;;;;;;
