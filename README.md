@@ -120,20 +120,6 @@ install.packages(c("mosaic", "readr", "dplyr", "ggplot2", "knitr"))
 - PDF reports (for R Markdown files)
 - Data quality assessments
 
-## 🎓 Academic Context
-
-This project is part of coursework for:
-- **Course**: Data Literacy (DaLi)
-- **Institution**: University Studies
-
-## 📄 License
-
-This project is for educational purposes as part of university coursework.
-
-## 🤝 Contributing
-
-This is an academic project. For suggestions or questions, please refer to the course materials or contact the instructor.
-
 ---
 
 *Note: Ensure all CSV files are placed in the same directory as the R scripts before running the analyses.*
